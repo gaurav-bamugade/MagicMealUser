@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/address_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="15dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            app:contentPaddingBottom="15dp"
+            app:contentPaddingLeft="20dp"
+            app:contentPaddingRight="20dp">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+            <TextView
+                    android:id="@+id/off_fd_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food Name:"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/offer_food_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/off_fd_name"
+                    android:text="foodname"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            <TextView
+                    android:id="@+id/off_fd_cat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/off_fd_name"
+                    android:layout_marginTop="5dp"
+                    android:text="Food Category:"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/offer_food_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/off_fd_name"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/off_fd_cat"
+                    android:text="foodcat"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            <TextView
+                    android:id="@+id/off_fd_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/off_fd_cat"
+                    android:layout_marginTop="5dp"
+                    android:text="Food Price:"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:id="@+id/ig_rupee"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/off_fd_cat"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/off_fd_price"
+                    android:src="@drawable/ic_rupee_indian" />
+
+            <TextView
+                    android:id="@+id/offer_food_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/off_fd_cat"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/ig_rupee"
+                    android:text="foodprice"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            <TextView
+                    android:id="@+id/off_fd_offer_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/off_fd_price"
+                    android:layout_marginTop="5dp"
+                    android:text="Food Offer Price:"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:id="@+id/ig_rupee2"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/off_fd_price"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/off_fd_offer_price"
+                    android:src="@drawable/ic_rupee_indian" />
+
+            <TextView
+                    android:id="@+id/offer_food_offer_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/off_fd_price"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/ig_rupee2"
+                    android:text="foodoffer"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+

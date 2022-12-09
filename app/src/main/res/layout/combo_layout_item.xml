@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="18dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <RelativeLayout
+            android:id="@+id/parent_rel_lay1"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/food_image_inside_rv1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/border_color"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_food_name_inside_rv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Veg Combo Offer"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_food_price_inside_rv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_rupee_indian"
+                        android:drawableTint="@color/white"
+                        android:text="350"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="95dp"
+                        android:layout_marginTop="-25dp"
+                        android:text="Per Person"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/txt_food_offer_price_inside_rv1"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginLeft="200dp"-->
+                    <!--                        android:layout_marginTop="-25dp"-->
+                    <!--                        android:drawableLeft="@drawable/ic_rupee_indian"-->
+                    <!--                        android:drawableTint="@color/white"-->
+                    <!--                        android:text="OP"-->
+                    <!--                        android:textColor="@color/white"-->
+                    <!--                        android:textSize="20sp"-->
+                    <!--                        android:textStyle="bold" />-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="-60dp"
+                    android:weightSum="2">
+
+                    <!--   <CheckBox
+                               android:id="@+id/favorites_add_to_fav"
+                               android:layout_width="50dp"
+                               android:layout_height="50dp"
+                               android:background="@drawable/toggle_selector"
+                               android:button="@null"
+                               android:visibility="visible"
+                               />-->
+
+                    <ImageView
+                        android:id="@+id/image_view_add_to_cart_inside_rv1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_mycart"
+                        app:tint="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    tools:context=".MyCartActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_cart_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ToolBarStyle"
+        app:menu="@menu/side_menu_cart"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_cart_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/my_cart_checkout_button"
+        android:layout_below="@id/my_cart_tool_bar"
+        android:padding="10dp" />
+
+
+    <Button
+        android:id="@+id/my_cart_checkout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="serif-monospace"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="Check Out"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

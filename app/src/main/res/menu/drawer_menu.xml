@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view"
+      android:background="@color/white"
+>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/ic_home_new"
+            />
+        <item
+            android:id="@+id/profile"
+            android:title="Account"
+            android:icon="@drawable/ic_aboutus"
+            />
+
+        <item
+            android:id="@+id/foodmenu"
+            android:title="Food Menu"
+            android:icon="@drawable/ic_foodmenu"
+            />
+
+    </group>
+    <group
+        android:checkableBehavior="single">
+
+        <item android:title="Authentication">
+            <menu>
+
+                <item
+                    android:id="@+id/myorders"
+                    android:title="My Orders"
+                    android:icon="@drawable/ic_myorder"
+                    />
+                <item
+                    android:id="@+id/mycart"
+                    android:title="My Cart"
+                    android:icon="@drawable/ic_mycart"
+                    />
+
+            </menu>
+        </item>
+
+    </group>
+    <group
+        android:checkableBehavior="single">
+        <item android:title="Authentication">
+            <menu>
+                <item
+                    android:id="@+id/feedback"
+                    android:title="@string/feedback"
+                    android:icon="@drawable/ic_feedback"
+                    />
+
+
+                <item
+                    android:id="@+id/aboutus"
+                    android:title="About us"
+                    android:icon="@drawable/ic_newabtus"
+                    />
+                <item
+                    android:id="@+id/logout"
+                    android:title="Logout"
+                    android:icon="@drawable/logout"
+                    />
+            </menu>
+        </item>
+
+    </group>
+
+</menu>

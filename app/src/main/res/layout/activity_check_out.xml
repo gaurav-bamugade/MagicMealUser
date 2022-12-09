@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5"
+        tools:context=".CheckOutActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:text="Please Confirm your details"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        <RelativeLayout
+                android:id="@+id/click_here_check_out_rel_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/check_out_card_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="@color/appcolo"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/click_here_to_select_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:drawableRight="@drawable/ic_arrow"
+                        android:drawableTint="@color/white"
+                        android:gravity="left"
+                        android:text="Click here to Select Address"
+                        android:textColor="@color/white"
+                        android:textSize="23sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/check_out_card_1"
+                    android:layout_marginTop="10dp"
+                    android:background="#ACA4A4" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/address_check_out_rel_layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+            <androidx.cardview.widget.CardView
+                    android:id="@+id/check_out_card_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="15dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="true"
+                    app:contentPaddingBottom="15dp"
+                    app:contentPaddingLeft="20dp"
+                    app:contentPaddingRight="20dp">
+
+                <RelativeLayout
+                        android:id="@+id/rellay_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:id="@+id/name_check_out"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Name"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/rellay_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <TextView
+                            android:id="@+id/house_check_out"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="35dp"
+                            android:text="House"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    <TextView
+                            android:id="@+id/road_check_out"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="35dp"
+                            android:layout_toRightOf="@+id/house_check_out"
+                            android:paddingLeft="5dp"
+                            android:text="Road"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    <TextView
+                            android:id="@+id/landmark_check_out"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/road_check_out"
+                            android:text="Landmark"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/rellay_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp">
+
+                    <TextView
+                            android:id="@+id/city_check_out"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="55dp"
+                            android:text="City"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    <TextView
+                            android:id="@+id/state_check_out"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="55dp"
+                            android:layout_toRightOf="@+id/city_check_out"
+                            android:paddingLeft="5dp"
+                            android:text="State"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/pin_code_check_out"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="55dp"
+                        android:layout_toRightOf="@+id/state_check_out"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text="Pin Code"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/rellay_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:id="@+id/mob_no_check_out"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="85dp"
+                            android:text="Mob"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/food_details_check_rel_layout_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+            <androidx.cardview.widget.CardView
+                    android:id="@+id/check_out_card_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="15dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="true"
+                    app:contentPaddingBottom="15dp"
+                    app:contentPaddingLeft="20dp"
+                    app:contentPaddingRight="20dp">
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                            android:id="@+id/image_view_clock_check_out"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@id/check_out_sub"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="17dp"
+                            android:src="@drawable/ic_clock" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/check_out_sub"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/image_view_clock_check_out"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:textColorHint="#A3A3A3">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/tv_delivery_time_check_out"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:drawablePadding="15dp"
+                                android:enabled="false"
+                                android:hint="Select Delivery Time*"
+                                android:paddingLeft="20dp"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                            android:id="@+id/check_out_sub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Sub Total:"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    <TextView
+                            android:id="@+id/check_out_product_sub_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_toRightOf="@id/check_out_sub"
+                            android:drawableLeft="@drawable/ic_rupee_indian"
+                            android:text="total"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <ProgressBar
+                android:id="@+id/confirm_order_progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:visibility="invisible" />
+
+    </LinearLayout>
+
+
+    <Button
+            android:id="@+id/check_out_confirm_order_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Confirm Order"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+</RelativeLayout>

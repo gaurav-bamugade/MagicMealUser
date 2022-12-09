@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ProfMyAddressActivity">
+
+        <LinearLayout
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                        android:id="@+id/houseno"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                    android:layout_marginTop="20sp"
+                        android:background="@drawable/squarroundtra"
+                        android:hint="House No., Building Name*"
+                        android:inputType="text"
+                        android:textSize="20sp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        />
+
+
+
+
+                <EditText
+                        android:id="@+id/roadname"
+                        android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_marginTop="20sp"
+                    android:background="@drawable/squarroundtra"
+                        android:hint="Road Name, Area, Colony*"
+                        android:inputType="text"
+                        android:textSize="20sp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        />
+
+
+            <LinearLayout
+                    android:layout_marginTop="20dp"
+
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+                    <EditText
+                        android:id="@+id/city"
+                        android:layout_width="150dp"
+                        android:layout_height="60sp"
+                        android:hint="City*"
+                        android:background="@drawable/squarroundtra"
+                        android:inputType="text"
+                        android:textSize="20sp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        />
+
+
+
+                    <EditText
+                        android:id="@+id/pincode"
+                        android:layout_width="170dp"
+                        android:background="@drawable/squarroundtra"
+                        android:layout_height="60sp"
+                        android:hint="Pincode*"
+                        android:inputType="number"
+                        android:textSize="20sp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        />
+
+
+
+            </LinearLayout>
+
+
+                <EditText
+                        android:id="@+id/state"
+                        android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_marginTop="20sp"
+                        android:hint="State*"
+                    android:background="@drawable/squarroundtra"
+                        android:text="Maharashtra"
+                        android:enabled="false"
+                        android:textSize="20sp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        />
+
+
+
+
+
+
+                <EditText
+                        android:id="@+id/landmark"
+                    android:background="@drawable/squarroundtra"
+                        android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_marginTop="20sp"
+                        android:hint="Landmark (Optional)"
+                        android:textSize="20sp"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        />
+
+
+
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ACA4A4"
+                />
+
+        <LinearLayout
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <EditText
+                        android:id="@+id/prof_add_name"
+                        android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                        android:hint="Name*"
+                    android:background="@drawable/squarroundtra"
+                        android:inputType="textPersonName"
+                        android:textSize="20sp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        />
+
+
+
+
+            <EditText
+                    android:id="@+id/mob_no"
+                    android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_marginTop="20sp"
+                    android:hint="Mobile Number*"
+                android:background="@drawable/squarroundtra"
+                    android:textSize="20sp"
+                    android:maxLength="10"
+                    android:inputType="phone"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    />
+
+
+
+                <EditText
+                        android:id="@+id/alt_mob_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                    android:background="@drawable/squarroundtra"
+                        android:hint="Alternate Mobile Number (Optional)"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                    android:layout_marginTop="20sp"
+                        android:textSize="20sp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        />
+
+
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ACA4A4"
+                />
+
+        <LinearLayout
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address Type"
+                    android:textSize="18sp"
+                    />
+
+            <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <RadioButton
+                        android:id="@+id/home_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Home Address"
+                        android:textSize="20sp"
+                        android:textColor="@color/grey"
+                        android:layout_marginTop="15dp"
+                        />
+
+                <RadioButton
+                        android:id="@+id/work_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Work/Office Address"
+                        android:textSize="20sp"
+                        android:textColor="@color/grey"
+                        android:layout_marginTop="15dp"
+                        />
+
+            </RadioGroup>
+
+            <Button
+                    android:id="@+id/savebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Save"
+                    android:gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/round_trans"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif-monospace"
+                    />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

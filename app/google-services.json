@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "421943511870",
+    "project_id": "foodapp-70afb",
+    "storage_bucket": "foodapp-70afb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421943511870:android:76c0f762fd3a300c2afa6f",
+        "android_client_info": {
+          "package_name": "com.example.minipro3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421943511870-lq5ldaivj04hqsg5nsrcrrv3ve1amk94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrlWig0C3oWbuY2NDSjRRKRl3dwTBW_6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "421943511870-lq5ldaivj04hqsg5nsrcrrv3ve1amk94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

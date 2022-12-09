@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".27"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/foodimg1"
+            android:scaleType="centerCrop"
+            >
+        </ImageView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/greyfilter"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/applogo"/>
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bgrod"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintHeight_percent=".78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpger"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tab_layoyut"
+            app:layout_constraintVertical_bias="0.3">
+
+        </androidx.viewpager.widget.ViewPager>
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layoyut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgrod"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.013">
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/fab_google"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:layout_marginEnd="140dp"
+            android:background="@color/white"
+            app:civ_border="true"
+            app:civ_border_color="@color/grey"
+            app:civ_border_width="0.5sp"
+            android:src="@drawable/googletrans"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewpger"
+            app:layout_constraintVertical_bias="0.51" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/fab_phone"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            app:civ_border="true"
+            app:civ_border_color="@color/grey"
+            app:civ_border_width="0.5sp"
+            android:src="@drawable/phonecontact"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/fab_google"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewpger" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
